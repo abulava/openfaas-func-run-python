@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  func_run_python:
+    lang: python
+    handler: ./function
+    image: abulava/openfaas-func-run-python
